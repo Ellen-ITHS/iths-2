@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="@5ikgQvE=w$s+k|+jYRI">Player</variable><variable type="KIND_SpriteKind" id="l9PyLQW0~X8tX*f#,RKT">Projectile</variable><variable type="KIND_SpriteKind" id=")7}[ap#|h6hCpMSTKNRz">Food</variable><variable type="KIND_SpriteKind" id="8:fKX!/9?ux{#=MY3wS?">Enemy</variable><variable id="q@|b3R8r0!`fSA[bpCYH">mySprite</variable><variable id="yqE/=Um:VA[~JBA51]Wk">player1</variable></variables><block type="pxt-on-start" id="VrrcxB,RuNTlOcN7W$(3" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor" id="t]iI8jNzB_#*WnPo`JvA"><value name="color"><shadow type="colorindexpicker" id="D(]6,Me`[ud-hsff{+I["><field name="index">10</field></shadow></value><next><block type="set_current_tilemap" id="WiI/w#;}MlFIO$P:UjE/"><value name="tilemap"><shadow type="tiles_tilemap_editor" id="[1[o0~pei?ypt2;rS[T~"><field name="tilemap">tilemap`level2`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level2"}}</data></shadow></value><next><block type="variables_set" id="`l?57]t5sz42gk8OUv.h"><field name="VAR" id="yqE/=Um:VA[~JBA51]Wk">player1</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="*b)r{_n95K2Zp+X=}v5v"><value name="img"><shadow type="screen_image_picker" id="DCYjc|IOq^Gcm]},#qt5"><field name="img">img`
+. . . . . . f f f f . . . . . . 
+. . . . f f f 2 2 f f f . . . . 
+. . . f f f 2 2 2 2 f f f . . . 
+. . f f f e e e e e e f f f . . 
+. . f f e 2 2 2 2 2 2 e e f . . 
+. . f e 2 f f f f f f 2 e f . . 
+. . f f f f e e e e f f f f . . 
+. f f e f b f 4 4 f b f e f f . 
+. f e e 4 1 f d d f 1 4 e e f . 
+. . f e e d d d d d d e e f . . 
+. . . f e e 4 4 4 4 e e f . . . 
+. . e 4 f 2 2 2 2 2 2 f 4 e . . 
+. . 4 d f 2 2 2 2 2 2 f d 4 . . 
+. . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+. . . . . f f f f f f . . . . . 
+. . . . . f f . . f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"DCYjc|IOq^Gcm]},#qt5"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="--.C~_NOLB{?,`rlfjY#"><field name="MEMBER">Player</field></shadow></value></block></value></block></next></block></next></block></statement></block><block type="gameupdate" id="PQ^[++UL,Q+)Ucemjiao" x="810" y="10"><statement name="HANDLER"><block type="game_control_sprite" id="@(,ys$*cjy)rUs2Otxx."><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="$a;fnN=fTb.[inyg4s.4"><field name="VAR" id="yqE/=Um:VA[~JBA51]Wk">player1</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="_?plYU(X3FC1nd5fCE)v"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="6}:)h4nPY`9EGXzEgVkh"><field name="speed">100</field></shadow></value><next><block type="camerafollow" id="j6X[,85/JjYKmcie,~@#"><value name="sprite"><block type="variables_get" id="nFUTO3k(+ptCHPHe%N8p"><field name="VAR" id="yqE/=Um:VA[~JBA51]Wk">player1</field></block></value></block></next></block></statement></block><block type="spritescreatenoset" id="X}K2:S/WbX97oq|=X_)i" disabled="true" x="1010" y="410"><value name="img"><shadow type="screen_image_picker" id="WyEMG%Xg/WbG)-cQhM%M" disabled="true"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. 3 3 3 . . . . . . . . . . . . 
+. . 3 3 3 3 3 3 . . . . . . 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 3 . 3 3 3 . 3 3 . . . . . . 
+. . . 3 3 3 3 3 . . . . . . . . 
+. . . . . 3 3 . . . . . . . . . 
+. . . . . . . 3 3 3 . . 3 . . . 
+. . . . . . . . . 3 3 3 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"WyEMG%Xg/WbG)-cQhM%M"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="VpIn)Nt1Xmb+w}(5f@z/" disabled="true"><field name="MEMBER">Player</field></shadow></value></block></xml>
